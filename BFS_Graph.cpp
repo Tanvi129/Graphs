@@ -32,7 +32,7 @@ int main(){
         int u,v;
         cin >> u >> v;
         adj[u].push_back(v);
-        // adj[v].push_back(u);
+        adj[v].push_back(u);
     }
     vector<int> result = bfsOfGraph(n,adj);
     for(int i = 0; i < result.size() ; i++){
